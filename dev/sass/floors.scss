@@ -1,0 +1,88 @@
+.floor-info {
+    display: flex;
+    gap: 24px;
+    background: #7ee7ff;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 24px 0 36px;
+}
+
+.info-item {
+    width: 100%;
+    background: #fff;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.flat {
+    &.active {
+        .flat-path {
+            fill: #00ff00;
+            stroke: #1d471d;
+            fill-opacity: 0.5;
+            stroke-opacity: 0.7;
+        } 
+    }
+    &:hover {
+        .flat-path {
+            fill-opacity: 0.5;
+            stroke-opacity: 0.7;
+        }
+    }
+
+    &-path {
+        fill: #4df04d;
+        stroke: rgb(29 71 29);
+        stroke-width: 2px;
+        fill-opacity: 0;
+        stroke-opacity: 0;
+        transition: .2s;
+        cursor: pointer;
+    }
+    .status {
+        cursor: pointer;
+    }
+}
+
+.status-cell {
+    stroke: black;
+    stroke-width: 2px;
+}
+
+.status-cell__number,
+.status-cell__text {
+    fill: black;
+    font-weight: bold;
+}
+
+.action {
+    .status-cell {
+        fill: #80D34E;
+    }
+}
+
+.booking {
+    .status-cell {
+        fill: #6B68FF;
+    }
+}
+
+.sold {
+    .status-cell {
+        fill: #D34E4E;
+    }
+}
+
+.free {
+    .status-cell {
+        fill: #00DEFC;
+    }
+}
+
+
+.status-large-cell {
+    fill: white;
+    stroke: black;
+    stroke-width: 2px;
+}

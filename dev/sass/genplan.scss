@@ -1,0 +1,55 @@
+.genplan {
+    max-height: calc(100vh - $header-height);
+    overflow: hidden;
+    position: relative;
+}
+
+.booking {
+	.build-path {
+		fill: #ff5050;
+		fill-opacity: 0.4;
+		stroke: #f80000;
+		cursor: no-drop;
+	}
+}
+
+.build-path {
+    fill: #05FFFF;
+    fill-opacity: 0;
+    stroke: #05FFFF;
+    stroke-opacity: 0;
+    stroke-width: 3px;
+    cursor: pointer;
+
+    &:hover {
+        fill-opacity: 0.3;
+        stroke-opacity: 1;
+    }
+}
+
+
+.information {
+    position: absolute;
+    bottom: 4vw;
+    right: 4vw;
+    border: 3px solid #fff;
+    padding: 28px;
+    border-radius: 12px;
+    background-color: #ffffff99;
+    backdrop-filter: blur(1px);
+    color: #000;
+
+    &-list__item {
+        list-style: none;
+        margin-bottom: 12px;
+        font-size: 18px;
+        div {
+            display: flex;
+            justify-content: space-between;
+        }
+       strong{
+        text-decoration: underline;
+
+        }
+    }
+}

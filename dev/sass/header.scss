@@ -1,8 +1,46 @@
-header{
-	height: 7vh;
-	padding: 15px 0;
-	background: #222;
-	a {
-		color: #fff;
-	}
+header {
+    background: #222;
+
+    .container {
+        display: flex;
+
+        align-items: center;
+    }
+
+    .logo {
+
+        display: inline-block;
+        width: 56px;
+        margin-right: 24px;
+
+        svg {
+            fill: #fff;
+        }
+    }
+
+
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    text-transform: uppercase;
+    transition: .4s;
+    &.show {
+        display: flex;
+    }
+
+    a {
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+        padding: 6px 12px;
+        transition: .4s;
+    }
+}
+
+
+.btn-burger {
+    margin-left: auto;
 }
