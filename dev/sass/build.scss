@@ -1,5 +1,4 @@
 .build {
-    width: calc(100% - 200px);
     margin-top: 50px;
 
     .container {
@@ -9,31 +8,26 @@
     }
 
     .left-container {
-        width: 70%;
+        width: 80%;
         margin-right: 20px;
     }
 
     .right-container {
-        width: 30%;
+        width: 20%;
     }
 
-    ul {
-        list-style-type: none;
-        padding: 0;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    li {
-        margin-bottom: 10px;
-        background-color: #ccc;
-        padding: 10px 15px;
-        border-radius: 5px;
-        cursor: default;
-    }
 }
 
 .center {
     text-align: center;
 }
 
+.build-info {
+    display: flex;
+    gap: 24px;
+    background: #7ee7ff;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 24px 0 36px;
+
+}
